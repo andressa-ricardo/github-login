@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1117;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .container #icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+body .container #icon-text > img {
+  width: 48px;
+  height: 48px;
+}
+body .container h1 {
+  padding-top: 15px;
+  letter-spacing: -0.5px;
+  font-weight: 100;
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+body .container h1, body .container label {
+  color: white;
+}
+body .container .form {
+  width: 310px;
+  height: 220px;
+  background-color: #161b22;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+  padding: 10px 16px 10px 16px;
+  gap: 20px;
+}
+body .container .email, body .container .password {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container label {
+  font-size: 14px;
+  font-family: Arial;
+  color: rgb(186, 186, 186);
+}
+body .container input {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+  background-color: #0d1117;
+  color: white;
+}
+body .container input:focus-visible {
+  box-shadow: #0550ae 0px 1px 4px, #0550ae 0px 0px 0px 3px;
+}
+body .container .password-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container a {
+  font-size: 12px;
+  color: rgb(60, 109, 213);
+  font-family: Arial;
+  text-decoration: none;
+}
+body .container a:hover {
+  text-decoration: underline;
+}
+body .container #forgot {
+  text-decoration: none;
+}
+body .container .form > button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  background-color: #238636;
+  cursor: pointer;
+  color: white;
+  transition: background-color 80ms;
+}
+body .container .form > button:hover {
+  background-color: #31a649;
+}
+body .container .create-account {
+  background-color: red;
+  padding: 16px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+  background-color: #0d1117;
+  gap: 10px;
+  color: rgb(186, 186, 186);
+  font-family: Arial;
+  font-size: 13px;
+}
+body .container .create-account > a {
+  font-size: 13px;
+}
+body .container .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+}
+body .container .footer > a:nth-child(4) {
+  color: gray;
+}
+
+/*# sourceMappingURL=styles.css.map */

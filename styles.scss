@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); 
+ 
+*{ 
+padding: 0%; 
+margin: 0%; 
+box-sizing: border-box; 
+} 
+ 
+$color-dark100: #0d1117; 
+$color-dark90: #161b22; 
+$color-white: white; 
+$radius: 5px; 
+$font: Arial;
+$shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px; 
+ 
+@mixin allCenter{ 
+display: flex; 
+justify-content: center; 
+} 
+ 
+@mixin colum{ 
+display: flex; 
+flex-direction: column; 
+} 
+ 
+@mixin none{
+    outline: none;
+    border: none;
+}
+
+body{ 
+    background-color: $color-dark100; 
+    height: 100vh; 
+    @include allCenter(); 
+    width: 100%; 
+    padding-top: 30px; 
+ 
+.container{ 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+ 
+#icon-text{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding-bottom: 5px 
+} 
+ 
+#icon-text > img{ 
+    width: 48px; 
+    height: 48px; 
+} 
+ 
+h1{ 
+    padding-top: 15px; 
+    letter-spacing: -0.5px; 
+    font-weight: 100; 
+    font-size: 24px; 
+    font-family: 'Quicksand', sans-serif; 
+} 
+ 
+h1, label{ 
+    color: $color-white; 
+} 
+ 
+.form{ 
+    width: 310px; 
+    height: 220px; 
+    background-color: $color-dark90; 
+    border-radius: $radius; 
+    @include allCenter(); 
+    flex-direction: column; 
+    box-shadow: $shadow; 
+    padding: 10px 16px 10px 16px; 
+    gap: 20px;
+
+} 
+ 
+.email, .password{ 
+    @include colum(); 
+    gap: 10px; 
+} 
+ 
+label{ 
+    font-size: 14px; 
+    font-family: $font;
+    color: rgb(186, 186, 186);
+} 
+input{ 
+    padding: 8px; 
+    border-radius: $radius; 
+    @include none();
+    box-shadow: $shadow; 
+    background-color: $color-dark100; 
+    color: white; 
+} 
+ 
+input:focus-visible{ 
+    box-shadow:#0550ae 0px 1px 4px, #0550ae 0px 0px 0px 3px; 
+} 
+ 
+.password-inline{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+ 
+a{ 
+    font-size: 12px; 
+    color: rgb(60, 109, 213); 
+    font-family: $font; 
+    text-decoration: none; 
+} 
+ 
+a:hover{ 
+    text-decoration: underline; 
+} 
+ 
+#forgot{ 
+    text-decoration: none; 
+} 
+ 
+.form > button{ 
+    width: 100%; 
+    border-radius: $radius; 
+    border: none; 
+    padding: 8px; 
+    background-color: #238636; 
+    cursor: pointer; 
+    color: white; 
+    transition: background-color 80ms; 
+} 
+ 
+.form > button:hover{ 
+    background-color: #31a649;
+} 
+ 
+.create-account{ 
+    background-color: red; 
+    padding: 16px;
+    display: flex; 
+    border-radius: $radius; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: $shadow; 
+    background-color: $color-dark100; 
+    gap: 10px; 
+    color: rgb(186, 186, 186);
+    font-family: $font;
+    font-size: 13px; 
+} 
+ 
+.create-account > a{ 
+    font-size: 13px; 
+} 
+ 
+.footer{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap:10px; 
+    padding-top: 50px; 
+} 
+ 
+.footer > a:nth-child(4){ 
+    color: gray; 
+}} 
+ 
+}
